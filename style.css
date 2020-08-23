@@ -105,6 +105,7 @@
   font-family: Montserrat;
   font-size: 2.4rem;
   font-weight: 700;
+  text-align: center;
 }
 .introduce .introduce_top .introduce_item .content {
   padding-top: 2rem;
@@ -121,8 +122,51 @@
 }
 .introduce .introduce_bottom {
   margin-top: 2rem;
-  height: 5rem;
-  background-color: green;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.introduce .introduce_bottom .introduce_item {
+  width: 33%;
+  height: 7.7rem;
+  border-radius: 4rem;
+  background-color: #ef172a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  cursor: pointer;
+}
+.introduce .introduce_bottom .introduce_item .text {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3rem;
+  text-transform: uppercase;
+  margin-right: 2.4rem;
+}
+.introduce .introduce_bottom .introduce_item .img {
+  width: 31px;
+  height: 31px;
+}
+.introduce .introduce_bottom .description {
+  margin-top: 2rem;
+  width: 33%;
+  color: #666666;
+  font-family: Montserrat;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /*# sourceMappingURL=style.css.map */
