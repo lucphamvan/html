@@ -121,8 +121,8 @@
   max-height: 21rem;
 }
 .introduce .introduce_bottom {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 5rem;
+  margin-bottom: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -167,6 +167,72 @@
   text-align: center;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.contest {
+  background-color: #2d303b;
+}
+.contest .contest-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contest .contest-item h2 {
+  height: 4rem;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.why .why-row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+.why .why-row .why-item {
+  width: 25%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.why .why-row .why-item .img {
+  padding: 7.6rem 0rem 2.8rem 0rem;
+}
+.why .why-row .why-item .title {
+  color: #333333;
+  font-family: Montserrat;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: center;
+}
+.why .why-row .why-item .content {
+  padding-top: 2rem;
+  width: 100%;
+  color: #333333;
+  font-family: Montserrat;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 3rem;
+  text-align: justify;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 21rem;
+}
+.why .why-title {
+  margin: 4rem auto auto auto;
+  text-align: center;
+  width: 50%;
+  color: #ef172a;
+  font-family: "Montserrat";
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=style.css.map */
