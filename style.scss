@@ -1,3 +1,10 @@
+@mixin centerlize($direction: row) {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: $direction;
+}
+
 .header {
     color: white;
     &__top {
@@ -42,7 +49,6 @@
                         font-size: 1.6rem;
                         font-weight: 400;
                         text-overflow: ellipsis;
-                       
                     }
 
                     &__img {
@@ -86,5 +92,42 @@
             height: 450px;
             background-image: url("images/header.png");
         }
+    }
+}
+
+.introduce {
+    .introduce_top {
+        @include centerlize();
+        .introduce_item {
+            width: 25%;
+            @include centerlize(column);
+            .img {
+                padding: 7.6rem 0rem 2.8rem 0rem;
+            }
+            .title {
+                color: #333333;
+                font-family: Montserrat;
+                font-size: 2.4rem;
+                font-weight: 700;
+            }
+            .content {
+                padding-top: 2rem;
+                width: 100%;
+                color: #333333;
+                font-family: Montserrat;
+                font-size: 1.6rem;
+                font-weight: 500;
+                line-height: 3rem;
+                text-align: justify;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                max-height: 21rem;
+            }
+        }
+    }
+    .introduce_bottom {
+        margin-top: 2rem;
+        height: 5rem;
+        background-color: green;
     }
 }
