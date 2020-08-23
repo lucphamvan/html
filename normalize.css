@@ -11,6 +11,7 @@
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  font-size: 62.5%;
 }
 
 /* Sections
@@ -350,6 +351,14 @@ template {
   display: none;
 }
 
+.container-fluid {
+  width: 100%;
+
+  margin-right: auto;
+  margin-left: auto;
+  min-width: 992px;
+}
+
 .container,
 .container-fluid,
 .container-sm,
@@ -358,8 +367,6 @@ template {
 .container-xl,
 .container-xxl {
   width: 100%;
-  padding-right: 1rem;
-  padding-left: 1rem;
   margin-right: auto;
   margin-left: auto;
   min-width: 992px;
