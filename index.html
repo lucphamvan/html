@@ -7,6 +7,7 @@
     <link rel="Shortcut Icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+    <link type="text/css" rel="stylesheet" href="js/slider/css/lightslider.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
     <title>My Aloha - Tổ chức thi trực tuyến</title>
 </head>
@@ -86,6 +87,42 @@
             <div class="container">
                 <div class="contest-item contest-top">
                     <h2>Cuộc thi sắp diễn ra</h2>
+                    <div style="width: 100%; ">
+                        <ul id="contest-slider" style="margin: 0 4rem 0 4rem">
+                            <li>
+                                <img />
+                                <p>Lorem ipsum Cupidatat quis pariatur anim.</p>
+                            </li>
+                            <li>
+                                <h3>2 Slide</h3>
+                                <p>Lorem ipsum Excepteur amet adipisicing fugiat velit nisi.</p>
+                            </li>
+                            <li>
+                                <h3>3 Slide</h3>
+                                <p>Lorem ipsum Excepteur amet adipisicing fugiat velit nisi.</p>
+                            </li>
+                            <li>
+                                <h3>4 Slide</h3>
+                                <p>Lorem ipsum Cupidatat quis pariatur anim.</p>
+                            </li>
+                            <li>
+                                <h3>5 Slide</h3>
+                                <p>Lorem ipsum Excepteur amet adipisicing fugiat velit nisi.</p>
+                            </li>
+                            <li>
+                                <h3>6 Slide</h3>
+                                <p>Lorem ipsum Excepteur amet adipisicing fugiat velit nisi.</p>
+                            </li>
+                            <li>
+                                <h3>7 Slide</h3>
+                                <p>Lorem ipsum Excepteur amet adipisicing fugiat velit nisi.</p>
+                            </li>
+                            <li>
+                                <h3>8 Slide</h3>
+                                <p>Lorem ipsum Excepteur amet adipisicing fugiat velit nisi.</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="contest-item contest-bottom">
                     <h2>Cuộc thi đang diễn ra</h2>
@@ -140,6 +177,17 @@
             </div>
         </div>
     </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/slider/js/lightslider.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var slider = $("#contest-slider").lightSlider({
+                item: 4,
+                slideMove: 4,
+            });
+
+        });
+    </script>
 </body>
 
 </html>
