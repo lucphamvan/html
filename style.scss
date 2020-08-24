@@ -167,8 +167,9 @@
     }
 }
 .contest {
+    padding : 4rem 0 6rem 0;
     background-color: #2d303b;
-    .contest-item {
+    .contest-list-item {
         @include centerlize(column, center);
         h2 {
             height: 4rem;
@@ -178,6 +179,18 @@
             font-weight: 900;
             text-transform: uppercase;
             text-align: center;
+        }
+
+        .contest-item {
+            .contest-item-img {
+            }
+            .contest-item-des {
+                color: #ffffff;
+                font-family: Montserrat;
+                font-size: 1.6rem;
+                font-weight: 500;
+                line-height: 2.4rem;
+            }
         }
     }
 }
