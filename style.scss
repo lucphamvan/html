@@ -311,3 +311,62 @@
         align-items: center;
     }
 }
+
+.certificate {
+    padding: 6rem 0 6rem 0;
+    background-color: #2d303b;
+    h2 {
+        @include centerlize(row, center);
+        color: #fff;
+        font-family: "Montserrat";
+        font-size: 3rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        padding-bottom: 2rem;
+    }
+    .cer-container {
+        display: grid;
+        grid-gap: 2rem;
+        grid-template-columns: auto auto auto auto auto auto;
+    }
+}
+
+.suport {
+    /* Style for "Rectangle" */
+    height: 7rem;
+    background-color: #ef172a;
+    @include centerlize(row, center);
+    .suport-container {
+        @include centerlize(row, center);
+        padding: 1.5rem 0 1.5rem 0;
+        ul {
+            margin: 0 auto 0 auto;
+            color: #ffffff;
+            font-family: Montserrat;
+            font-size: 1.6rem;
+        }
+        li {
+            float: left;
+            margin: 0 2rem 0 2rem;
+            line-height: 3rem;
+            cursor: pointer;
+        }
+    }
+}
+
+.footer {
+    background-color: #2d303b;
+    .footer-container {
+        height: 7rem;
+        @include centerlize(row, space-between);
+        .footer-text {
+            color: #999999;
+            font-family: Montserrat;
+            font-size: 1.6rem;
+        }
+        div img {
+            margin-left: 1rem;
+            cursor: pointer;
+        }
+    }
+}
